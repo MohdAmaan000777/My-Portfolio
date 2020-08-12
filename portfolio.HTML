@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #main{
+        height: 2000px;
+        width: 100%; 
+        background-image:url('way.jpeg'); 
+        object-fit: cover; 
+        background-attachment: fixed;
+    }
+    #head{
+        position: fixed;
+        height: 70px;
+        width:100%;
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.8);
+        float: left; 
+    }
+    #logo{
+        height: 70px;
+        width: 70px;
+        background-image:url('logo.jpg'); opacity: 1.0;
+        float:left;
+    }
+    #rem{
+        height:70px;
+        width: 93% ;
+        background-color:#381738; opacity: 0.9;
+        float: left;
+        border:none;
+        font-size:60px;
+        color:aliceblue;
+        text-shadow:2px 2px black;
+        font-family: Impact, Charcoal, sans-serif;
+        text-align: center;
+    }
+    #about{ 
+        height: 300px;
+        width:97%;
+        margin-top:90px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:20px;
+        box-shadow: 0px 4px 12px 4px #794385;
+        float: left;
+        
+    }
+    #info{
+        /*height: 240px;*/
+       
+        float: left;
+       /* border: 1px solid;*/
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 70px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+        margin-right: 100px;
+        margin-left: 100px;
+
+    }
+    #pic{
+        height: 300px;
+        width: 300px;
+        float: left;
+        /*-webkit-filter: blur(5px);
+        filter: blur(5px);*/
+    }
+    #info2{
+        height: 40px;
+        /*border: 1px solid black;*/
+        float: left;
+        margin-top: 80px;
+        margin-right: 100px;
+        margin-left: 330px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+    }
+    #work{
+        
+        height: 300px;
+        width:97%;
+        margin-top:50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:20px;
+        box-shadow: 0px 4px 12px 4px #794385;
+        float: left;
+    }
+    #travel{ 
+        height: 300px;
+        width:97%;
+        margin-top:50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:20px;
+        box-shadow: 0px 4px 12px 4px #794385;
+        float: left;
+        }
+    #lifestyle{
+         height: 300px;
+        width:97%;
+        margin-top:50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:20px;
+        box-shadow: 0px 4px 12px 4px #794385;
+        float: left;
+        }
+        #contact{
+         height: 300px;
+        width:97%;
+        margin-top:50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:20px;
+        box-shadow: 0px 4px 12px 4px #794385;
+        float: left;
+        }
+        #footer{ 
+        height: 70px;
+        width:100%;
+        background-color: #381738;
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.8);
+        margin-top: 40px; opacity: 0.8;
+        float: left; }
+        #cpr{
+        height: 70px;
+        width: 48.5%;
+        color: aliceblue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 10px;
+        float: left;
+        }
+        #des{  height: 70px;
+        width: 48.5%;
+        color: aliceblue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 10px;
+        float: right;}
+        #wpic{
+        height: 300px;
+        width: 300px;
+        float: right;
+         }
+        #winfo{
+        float: left;
+        width: calc(97% - 300px);
+        text-align: left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+        margin-left: 10px;
+        
+         }
+         #tpic{
+        height: 300px;
+        width: 300px;
+        float: left;
+        
+         }
+        #tinfo{
+        float: left;
+        width: calc(97% - 300px);
+        text-align: right;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+        margin-left: 30px;
+         }
+         #lpic{
+        height: 300px;
+        width: 300px;
+        float: right;
+        /*-webkit-filter: blur(5px);
+        filter: blur(5px);*/
+         }
+        #linfo{
+        float: left;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 70px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+        margin-right: 100px;
+        margin-left: 100px;
+
+         }
+         #cpic{
+        height: 300px;
+        width: 300px;
+        float: left;
+        /*-webkit-filter: blur(5px);
+        filter: blur(5px);*/
+         }
+        #cinfo{
+        /*height: 240px;*/
+       
+        float: left;
+       /* border: 1px solid;*/
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 70px;
+        color: aliceblue;
+        text-shadow:2px 2px #381738;
+        margin-right: 100px;
+        margin-left: 100px;
+
+         }
+</style>
+<body>
+    <div id="main">
+        <div id="head">
+            <div id="logo"></div>
+            <div id="rem">KD CODES</div>
+        </div>
+        <div id="about">
+            <div id="pic"><img src="pic.jpeg" alt="picture"> </div>
+            <div id="info">Hi! I am Amaan.</br> I am a Django Developer.</div>
+            <div id="info2">Scroll to learn more about me.</div>
+        </div>
+        <div id="work">
+            <div id="winfo">
+                <h1>Education & Work Experience</h1>
+                I am currently persuing final year of Master in Computer Applications programme in Integral University, Lucknow.
+                I have successfully completed "Django Development & Machine Learning" Internship at Softpro India LTD. in 2019,
+                where I learned the concepts and tools used in Web development including different python frameworks and libraries.
+                Learning new concepts of Web Development & Cyber Security is my daily routine and I love it!
+        
+        </div>
+            <div id="wpic"><img src="wpic.jpeg" alt="picture"></div>
+        </div>
+        <div id="travel">
+            <div id="tpic"><img src="bike.jpg" alt="picture"></div>
+            <div id="tinfo">
+                <h1>Bon Voyage</h1>
+                The best gift bestowerd upon me by my parents is the spirit of exploring new destinations and meeting new people.
+                I love travelling to different places, learning about different cultures and trying different cuisenes.
+                 
+            </div>
+        </div>
+        <div id="lifestyle">
+                <div id="linfo"></div>
+                <div id="lpic"><img src="lpic.jpeg" alt="picture"></div>
+        </div>
+        <div id="contact">
+                <div id="cpic"><img src="cpic.jpeg" alt="picture"></div>
+                <div id="cinfo"></div>
+        </div>
+        <div id="footer"> 
+            <div id="cpr">All Copyrights to KD CODES</div>
+            <div id="des">Designed By KD CODES</div>
+        </div>
+                
+    </div>
+</body>
+</html>
